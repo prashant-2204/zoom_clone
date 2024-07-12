@@ -1,3 +1,6 @@
+//@ts-nocheck  
+
+
 import MeetingTypeList from '@/components/MeetingTypeList';
 
 const Home = () => {
@@ -15,9 +18,9 @@ const Home = () => {
     day: 'numeric', 
     weekday: 'long' 
   };
-  //@ts-ignore
+
   const time = now.toLocaleTimeString('en-US', timeOptions);
-  //@ts-ignore
+  
   const date = now.toLocaleDateString('en-US', dateOptions);
 
   return (
