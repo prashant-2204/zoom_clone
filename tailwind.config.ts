@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 
-const config = {
+const config: Config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -20,27 +20,27 @@ const config = {
     extend: {
       colors: {
         dark: {
-          1: '#1C1F2E',
-          2: '#161925',
-          3: '#252A41',
-          4: '#1E2757',
+          1: '#000000', // Black
+          2: '#0D0D0D', // Darker black
+          3: '#1A1A1A', // Dark grayish black
+          4: '#333333', // Dark gray
         },
         blue: {
-          1: '#0E78F9',
+          1: '#007BFF', // Bright blue
         },
         sky: {
-          1: '#C9DDFF',
-          2: '#ECF0FF',
-          3: '#F5FCFF',
+          1: '#6C757D', // Dark sky blueish
+          2: '#495057', // Gray sky blueish
+          3: '#343A40', // Very dark sky blueish
         },
         orange: {
-          1: '#FF742E',
+          1: '#FF69B4', // Pinkish orange
         },
         purple: {
-          1: '#830EF9',
+          1: '#AF52DE', // Dark lavender
         },
         yellow: {
-          1: '#F9A90E',
+          1: '#999A2', // Bright yellow
         },
       },
       keyframes: {
@@ -58,11 +58,11 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       backgroundImage: {
-        hero: "url('/images/hero-background.png')",
+        hero: "bg-black",
       },
     },
   },
   plugins: [require('tailwindcss-animate')],
-} satisfies Config;
+};
 
 export default config;

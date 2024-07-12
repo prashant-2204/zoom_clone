@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "ZOOM",
   description: "Video calling App",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/icons/pk.svg",
   },
 };
 
